@@ -1,0 +1,27 @@
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   Copyright 2025 Omar Arias
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+------------------------------------------------------------
+Traducción informativa (NO oficial):
+
+Puedes usar, copiar, modificar y redistribuir este código bajo los términos de la licencia Apache 2.0.
+El software se provee "tal cual", sin garantías de ningún tipo. Debes mantener este aviso en cualquier copia.
+Para los términos completos y validez legal consulta: http://www.apache.org/licenses/LICENSE-2.0
+------------------------------------------------------------
