@@ -4,7 +4,7 @@
 
 ## VARIABLES CONFIGURABLES
 
-- **PROYECTO_NOMBRE:** tipo-cambio  
+- **PROYECTO_NOMBRE:** bcv-hoy  
 - **ARCHIVO_MAIN:** bcv-hoy.py  
 - **NOMBRE_API:** bcv-hoy  
 - **ENDPOINT:** /bcv-hoy  

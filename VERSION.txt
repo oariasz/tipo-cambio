@@ -1,0 +1,7 @@
+bcv-hoy API
+Version: 1.0
+Build timestamp: 2025-08-08 03:47:21 -0400
+Author: Omar Arias
+Git commit: 4897b466069197f2628ef68c09d70c364729bd59
+Branch: main
+Release notes: Initial production deployment of the bcv-hoy API.
