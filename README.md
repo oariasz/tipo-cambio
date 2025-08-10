@@ -26,14 +26,14 @@ Esta API expone el tipo de cambio oficial publicado por el BCV, así como tasas 
    Lanza el servidor Flask:
 
    ```bash
-   python bcv-hoy.py
+   python bcv_hoy.py
    ```
 
-El API quedará disponible en http://127.0.0.1:5077/bcv-hoy
+El API quedará disponible en http://127.0.0.1:5077/bcv_hoy
 
 🧾 Ejemplo de uso
 ```bash
-curl http://127.0.0.1:5077/bcv-hoy
+curl http://127.0.0.1:5077/bcv_hoy
 ```
 
 Ejemplo de respuesta

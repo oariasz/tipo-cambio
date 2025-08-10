@@ -1,11 +1,11 @@
 ===============================================================================
 DEPLOYMENT_1.0.txt
-Guía detallada de despliegue seguro para API Flask: bcv-hoy (Estratek Cloud)
+Guía detallada de despliegue seguro para API Flask: bcv_hoy (Estratek Cloud)
 Fecha: 2025-08-08
 Autor: Omar Arias
 ===============================================================================
 
-Este procedimiento documenta paso a paso cómo desplegar la API Flask bcv-hoy
+Este procedimiento documenta paso a paso cómo desplegar la API Flask bcv_hoy
 en el servidor etk-web (AWS Lightsail, Bitnami), siguiendo las mejores prácticas,
 el flujo seguro, y los scripts definidos en la Ficha Técnica de Estratek Cloud.
 -------------------------------------------------------------------------------
@@ -22,14 +22,14 @@ PASOS DETALLADOS DE DEPLOYMENT
 1. BACKUP DE SEGURIDAD ANTES DE CAMBIOS
 
     cd /opt/bitnami/estratekdata/app
-    cp -r bcv-hoy bcv-hoy_backup_$(date +%Y%m%d_%H%M)
+    cp -r bcv_hoy bcv_hoy_backup_$(date +%Y%m%d_%H%M)
 
 -------------------------------------------------------------------------------
 
 2. TRANSFERENCIA DEL CÓDIGO DESDE MAC AL SERVIDOR
 
     # Desde tu Mac:
-    scp -r /Users/<usuario>/dev/Flask/bcv-hoy bitnami@<IP_PUBLICA>:/opt/bitnami/estratekdata/app/
+    scp -r /Users/<usuario>/dev/Flask/bcv_hoy bitnami@<IP_PUBLICA>:/opt/bitnami/estratekdata/app/
 
     # Reemplaza <usuario> y <IP_PUBLICA> según corresponda.
 
@@ -37,7 +37,7 @@ PASOS DETALLADOS DE DEPLOYMENT
 
 3. PREPARACIÓN DEL ENTORNO VIRTUAL EN EL SERVIDOR
 
-    cd /opt/bitnami/estratekdata/app/bcv-hoy
+    cd /opt/bitnami/estratekdata/app/bcv_hoy
     python3.11 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
@@ -46,10 +46,10 @@ PASOS DETALLADOS DE DEPLOYMENT
 
 4. VALIDACIÓN LOCAL DEL FUNCIONAMIENTO
 
-    python bcv-hoy.py
+    python bcv_hoy.py
 
     # En otra terminal del servidor:
-    curl http://127.0.0.1:5077/bcv-hoy
+    curl http://127.0.0.1:5077/bcv_hoy
 
     # Verifica que la API devuelve el JSON esperado antes de proceder.
 
@@ -58,7 +58,7 @@ PASOS DETALLADOS DE DEPLOYMENT
 5. DEPLOYMENT CON SCRIPT OFICIAL
 
     # Ejecuta el script de deployment según la ficha técnica:
-    ./etk_deploy.sh --target api --name bcv-hoy --class Flask --source /opt/bitnami/estratekdata/app/bcv-hoy --desc "API BCV hoy" --port 5077
+    ./etk_deploy.sh --target api --name bcv_hoy --class Flask --source /opt/bitnami/estratekdata/app/bcv_hoy --desc "API BCV hoy" --port 5077
 
 -------------------------------------------------------------------------------
 
@@ -75,7 +75,7 @@ PASOS DETALLADOS DE DEPLOYMENT
 7. VALIDACIÓN DE ENDPOINT EN PRODUCCIÓN
 
     # Desde tu equipo o navegador:
-    curl https://api.estratekdata.com/bcv-hoy
+    curl https://api.estratekdata.com/bcv_hoy
 
     # Verifica que el JSON corresponde a la consulta local.
 
@@ -84,8 +84,8 @@ PASOS DETALLADOS DE DEPLOYMENT
 8. ROLLBACK SEGURO (SI OCURRE ALGÚN ERROR)
 
     cd /opt/bitnami/estratekdata/app
-    rm -rf bcv-hoy
-    mv bcv-hoy_backup_<timestamp> bcv-hoy
+    rm -rf bcv_hoy
+    mv bcv_hoy_backup_<timestamp> bcv_hoy
 
     # Activa entorno y repite restart de Apache si es necesario.
 

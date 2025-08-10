@@ -183,7 +183,7 @@ class BsScraper:
 # --- FLASK API ---
 app = Flask(__name__)
 
-@app.route("/bcv-hoy", methods=["GET"])
+@app.route("/", methods=["GET"])
 def bcv_hoy():
     scraper = BsScraper()
     try:

@@ -4,10 +4,10 @@
 
 ## VARIABLES CONFIGURABLES
 
-- **PROYECTO_NOMBRE:** bcv-hoy  
-- **ARCHIVO_MAIN:** bcv-hoy.py  
-- **NOMBRE_API:** bcv-hoy  
-- **ENDPOINT:** /bcv-hoy  
+- **PROYECTO_NOMBRE:** bcv_hoy  
+- **ARCHIVO_MAIN:** bcv_hoy.py  
+- **NOMBRE_API:** bcv_hoy  
+- **ENDPOINT:** /bcv_hoy  
 - **SUBDOMINIO_API:** api.estratekdata.com  
 - **PYTHON_VERSION:** 3.11  
 - **USUARIO_GITHUB:** oariasz  
